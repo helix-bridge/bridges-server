@@ -75,7 +75,11 @@ const withdrawalParams = (chain: Chain, contractAddress: string): PartialContrac
 }
 
 const constructParams = (chain: Chain) => {
-  const contractAddress = "0xbA5D580B18b6436411562981e02c8A9aA1776D10"
+  let contractAddress = '0xbA5D580B18b6436411562981e02c8A9aA1776D10';
+
+  if (chain === 'blast') {
+    contractAddress = '0xB180D7DcB5CC161C862aD60442FA37527546cAFC';
+  }
 
   const eventParams: PartialContractEventParams[] = [
     depositParams(chain, contractAddress),
@@ -96,6 +100,11 @@ const adapter: BridgeAdapter = {
   scroll: constructParams("scroll"),
   optimism: constructParams("optimism"),
   gnosis: constructParams("xdai"),
+  blast: constructParams("blast"),
+  moonbeam: constructParams("moonbeam"),
+  base: constructParams("base"),
+  zircuit: constructParams("zircuit"),
+  avalanche: constructParams("avalanche"),
 };
 
 export default adapter;
