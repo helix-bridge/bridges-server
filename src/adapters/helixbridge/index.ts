@@ -103,7 +103,6 @@ const adapter: BridgeAdapter = {
   blast: constructParams("blast"),
   moonbeam: constructParams("moonbeam"),
   base: constructParams("base"),
-  zircuit: constructParams("zircuit"),
   avalanche: constructParams("avalanche"),
 };
 

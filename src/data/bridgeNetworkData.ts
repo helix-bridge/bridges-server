@@ -1286,7 +1286,11 @@ export default [
       "Mantle",
       "Scroll",
       "Optimism",
-      "Gnosis"
+      "Gnosis",
+      "Blast",
+      "Moonbeam",
+      "Base",
+      "Avalanche"
     ],
     chainMapping: {
       gnosis: "xdai",
