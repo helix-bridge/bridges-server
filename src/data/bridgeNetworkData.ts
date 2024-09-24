@@ -1290,7 +1290,7 @@ export default [
       "Blast",
       "Moonbeam",
       "Base",
-      "Avalanche"
+      "Avalanche",
     ],
     chainMapping: {
       gnosis: "xdai",
